@@ -1,2 +1,2 @@
-# openclassrooms-booki
-Transformez une maquette en site web avec HTML &amp; CSS
+# Booki
+Turn a mockup into a website using HTML5 and CSS3.
