@@ -393,12 +393,14 @@ nav a:hover {
   transform: scale(1.01);
 }
 /* Footer */
+footer {
+  margin: 0 64px 0 64px;
+}
 .footer {
   display: flex;
   width: 1440px;
   margin: auto;
   background-color: #f2f2f2;
-  padding-bottom: 16px;
   gap: 225px;
   font-size: medium;
 }
@@ -458,14 +460,8 @@ ul {
   }
   .child1,
   .child3,
-  .child5 {
-    grid-column: 1/2;
-  }
   .child2,
   .child4,
-  .child6 {
-    grid-column: 2/3;
-  }
   .child1,
   .child2 {
     grid-row: 1/2;
@@ -473,10 +469,6 @@ ul {
   .child3,
   .child4 {
     grid-row: 2/3;
-  }
-  .child5,
-  .child6 {
-    grid-row: 3/4;
   }
 }
 
