@@ -84,7 +84,7 @@
     border-top: 0.01px;
     border-bottom: 3px solid #f2f2f2;
   }
-  .link[data-active="true"] {
+  .link[data-active='true'] {
     border-top: none;
     border-bottom: 3px solid #0065fc;
   }
