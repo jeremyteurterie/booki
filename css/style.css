@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 * {
   box-sizing: border-box;
-  font-family: "Raleway", "sans-serif";
+  font-family: 'Raleway', 'sans-serif';
   padding: 0;
   margin: 0;
 }
@@ -21,7 +21,7 @@ a {
   text-decoration: none;
 }
 .main-title1 {
-  padding: 16px 32px 8px 32px;
+  padding: 32px 32px 8px 32px;
   font-size: 100%;
 }
 .main-title2 {
@@ -30,8 +30,8 @@ a {
 #logo {
   margin-right: auto;
   margin-top: 0;
-  padding: 0 48px;
-  width: 225px;
+  padding: 0 32px;
+  width: 150px;
 }
 /* Barre de navigation */
 nav {
@@ -54,7 +54,7 @@ nav a:hover {
   border-top: 3px transparent solid;
   border-bottom: 3px transparent solid;
 }
-.link[data-active="true"] {
+.link[data-active='true'] {
   border-top: 3px solid #0065fc;
   color: #0065fc;
 }
@@ -225,10 +225,10 @@ nav a:hover {
   font-size: 80%;
   color: #0065fc;
 }
-.icon[data-active="true"] {
+.icon[data-active='true'] {
   color: #0065fc;
 }
-.icon[data-active="false"] {
+.icon[data-active='false'] {
   color: #d9d9d9;
 }
 .hebergement-card-body:hover {
@@ -433,6 +433,8 @@ nav a:hover {
 /* Footer */
 .footer {
   display: flex;
+  width: 1440px;
+  margin: auto;
   background-color: #f2f2f2;
   padding: 0 32px 16px 32px;
   gap: 225px;
