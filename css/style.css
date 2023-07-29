@@ -138,23 +138,25 @@ nav a:hover {
   display: flex;
   align-items: center;
 }
-.filter .fas {
+.filter i {
+  width: 25px;
+}
+.filter .fa-solid {
   color: #0065fc;
-  background-color: #deebff;
   border-radius: 50%;
-  margin: -2px;
-  width: 3rem;
+  width: 2rem;
   height: 3rem;
   display: flex;
+  padding: 0 24px;
   align-items: center;
   justify-content: center;
 }
 .filter div {
   font-weight: bold;
-  padding: 0 16px;
+  padding-right: 16px;
 }
 .filter:hover {
-  transform: scale(1.02);
+  background-color: #deebff;
 }
 /* Hebergement # Populaire */
 .apartment {
