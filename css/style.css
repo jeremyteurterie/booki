@@ -53,10 +53,10 @@ nav a:hover {
   border-top: 3px transparent solid;
   border-bottom: 3px transparent solid;
 }
-.link[data-active='true'] {
+/* .link[data-active='true'] {
   border-top: 3px solid #0065fc;
   color: #0065fc;
-}
+} */
 /* Barre de recherche */
 .formulaire {
   display: flex;

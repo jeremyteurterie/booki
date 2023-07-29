@@ -1,26 +1,5 @@
 /* ******************************* TABLETTE ******************************* */
-@media (max-width: 992px) {
-  /* Hebergement & Populaires */
-  .apartment {
-    flex-direction: column;
-  }
-  .hebergement h2 {
-    padding: 32px 0 32px 32px;
-  }
-  .hebergement-card-body {
-    width: 47%;
-  }
-  .popular {
-    order: -1;
-  }
-  .popular-cards {
-    margin: 0 0 20px 0;
-    padding: 0 16px 0 16px;
-    gap: 8px;
-  }
-  .title i {
-    padding: 0 16px 0 0;
-  }
+@media (min-width: 1025px) {
   /* Activités */
   .activity h2 {
     padding: 32px 0 32px 32px;
@@ -37,13 +16,11 @@
     height: 130px;
   }
   .child1,
-  .child3,
-  .child5 {
+  .child3 {
     grid-column: 1/2;
   }
   .child2,
-  .child4,
-  .child6 {
+  .child4 {
     grid-column: 2/3;
   }
   .child1,
