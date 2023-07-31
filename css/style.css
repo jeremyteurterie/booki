@@ -5,13 +5,14 @@
   padding: 0;
   margin: 0;
 }
+.main-container {
+  padding: 0 50px;
+}
 main {
-  padding: 0 64px 0 64px;
   margin: 0 auto;
   max-width: 1440px;
 }
 header {
-  padding: 0 64px 0 64px;
   margin: 0 auto;
   max-width: 1440px;
 }
@@ -393,31 +394,28 @@ nav a:hover {
   transform: scale(1.01);
 }
 /* Footer */
-footer {
-  margin: 0 64px 0 64px;
-}
 .footer {
   display: flex;
-  width: 1440px;
-  margin: auto;
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: #f2f2f2;
   gap: 225px;
   font-size: medium;
 }
 .footer div {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .footer li {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 .footer h4 {
-  padding-left: 24px;
+  padding-left: 16px;
   margin-bottom: 16px;
 }
 ul {
-  padding-left: 24px;
+  padding-left: 16px;
   list-style-type: none;
 }
 
@@ -448,32 +446,44 @@ ul {
     padding: 32px 0 32px 32px;
   }
   .activity-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     padding: 0 16px 32px 16px;
     gap: 24px;
   }
   .activity-cards div {
+    grid-column: 1;
     height: 180px;
   }
   .activity-cards img {
     height: 130px;
   }
-  .child1,
-  .child3,
-  .child2,
-  .child4,
-  .child1,
-  .child2 {
-    grid-row: 1/2;
+  /* Activités */
+  .activity {
+    padding: 0;
   }
-  .child3,
+  .child1 {
+    grid-row: 1;
+  }
+  .child2 {
+    grid-row: 2;
+  }
+  .child3 {
+    grid-row: 3;
+  }
   .child4 {
-    grid-row: 2/3;
+    grid-row: 4;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 0;
   }
 }
 
 /* ******************************* MOBILE ******************************* */
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
+  .main-container {
+    padding: 0;
+  }
   #logo {
     margin-top: 16px;
   }
@@ -540,31 +550,5 @@ ul {
   }
   .popular {
     border-radius: 0;
-  }
-  /* Activités */
-  .activity {
-    padding: 0;
-  }
-  .activity-cards {
-    grid-template-columns: 1fr;
-  }
-  .activity-cards div {
-    grid-column: 1;
-  }
-  .child1 {
-    grid-row: 1;
-  }
-  .child2 {
-    grid-row: 2;
-  }
-  .child3 {
-    grid-row: 3;
-  }
-  .child4 {
-    grid-row: 4;
-  }
-  .footer {
-    flex-direction: column;
-    gap: 0;
   }
 }
